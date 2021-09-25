@@ -12,6 +12,7 @@ class Category(models.Model):
         return f'{self.name}'
 
 class Branch(models.Model):
+    category1 = models.ForeignKey('categorys.Category', models.CASCADE, related_name='categor1', null=True)
     latitude = models.CharField('Широта', max_length=255)
     longitude = models.CharField('Долгота', max_length=255)
     address = models.CharField('Адрес', max_length=255)
@@ -25,6 +26,7 @@ class Branch(models.Model):
 
 
 class Contact(models.Model):
+    category2 = models.ForeignKey('categorys.Category', models.CASCADE, related_name='categor2', null=True)
     CHOICES = (
         ('1','Телефон'),
         ('2','Фейсбук'),

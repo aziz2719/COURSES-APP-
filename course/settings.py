@@ -41,6 +41,7 @@ INSTALLED_APPS = [
 
     'categorys',
 
+    'drf_yasg',
     'rest_framework',
     'django_cleanup',
 ]

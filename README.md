@@ -11,34 +11,40 @@ This is a project written using Python, Django and Django Rest Framework
 ***
 ####1. Сreating a folder
 >On the desktop, create the test-project folder
+***
 ####2. Terminal
 
 #####In your terminal:
 >Open a terminal and write commands:
 >cd Desktop/test-project or cd 'Desktop'/test-project
-
+****
 ####3. Clone the repository
 ```
 https://github.com/aziz2719/COURSES-APP-.git
 ```
+***
 ####4. Create the virtual enviroment
 ```
 python3 -m venv venv
 source myvenv/bin/activate
 ```
+***
 ####5. Install the requirements
 ```
 pip install -r req.txt
 ```
+***
 ####6. Make migrations
 ```
 python manage.py makemigrations
 python manage.py migrate
 ```
+***
 ####7. Create a new superuser
 ```
 python manage.py createsuperuser
 ```
+***
 ####8. Run the server
 ```
 python manage.py runserver

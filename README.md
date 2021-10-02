@@ -12,9 +12,11 @@ This is a project written using Python, Django and Django Rest Framework
 ####1. Сreating a folder
 >On the desktop, create the test-project folder
 ####2. Terminal
+
 #####In your terminal:
 >Open a terminal and write commands:
 >cd Desktop/test-project or cd 'Desktop'/test-project
+
 ####3. Clone the repository
 ```
 https://github.com/aziz2719/COURSES-APP-.git

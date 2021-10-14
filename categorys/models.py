@@ -1,4 +1,5 @@
 from django.db import models
+from django.urls import reverse
 
 class Category(models.Model):
     name = models.CharField('Название', max_length=255)
@@ -18,13 +19,12 @@ class Course(models.Model):
     category = models.ForeignKey(Category, on_delete=models.CASCADE, related_name='category1', null=True)
     logo = models.ImageField('logo/', upload_to='media', null=True)
 
-    class Meta:
-        verbose_name = 'Курс'
-        verbose_name_plural = 'Курсы'
 
     def __str__(self):
         return self.name
-    
+
+    def get_absolute_url(self):
+        return f"course/{self.id}"
 
 
 class Branch(models.Model):

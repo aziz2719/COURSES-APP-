@@ -39,8 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
+    'catalog',
     'categorys',
-
     'drf_yasg',
     'rest_framework',
     'django_cleanup',

@@ -14,13 +14,11 @@ DATABASES = {
         'NAME': config('DB_NAME'),
         'USER': config('DB_USER'),
         'PASSWORD': config('DB_PASSWORD'),
-        'HOST': config('DB_HOST'),
+        'HOST': config('ALLOWED_HOSTS'),
         'PORT': '',
     }
 }
 
-
-ALLOWED_HOSTS = ['my-courses-app-m.herokuapp.com']
 
 
 INSTALLED_APPS = [

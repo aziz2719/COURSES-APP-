@@ -20,7 +20,7 @@ DATABASES = {
 }
 
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['my-courses-app-m.herokuapp.com']
 
 
 INSTALLED_APPS = [

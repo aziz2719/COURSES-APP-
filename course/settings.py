@@ -20,7 +20,7 @@ DATABASES = {
 }
 
 
-ALLOWED_HOSTS = ['my-courses-app-m.herokuapp.com']
+ALLOWED_HOSTS = ['*']
 
 
 INSTALLED_APPS = [
@@ -111,6 +111,7 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATIC_DIRS = [
     os.path.join(BASE_DIR, 'static')
     ]
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 #STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'),)
 #django_heroku.settings(locals())

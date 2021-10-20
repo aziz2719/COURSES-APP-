@@ -8,15 +8,8 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = config('SECRET_KEY')
 DEBUG = config('DEBUG', cast=bool)
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': config('DB_NAME'),
-        'USER': config('DB_USER'),
-        'PASSWORD': config('DB_PASSWORD'),
-        'HOST': config('DB_HOST'),
-        'PORT': 5432,
+    'default': dj_database_url.parse('postgres://ssrvhbgigjugbd:48cc70fe85ccb3d9ce79b426d5de3ab3c6e543a037f009cea53e1462b3e926dd@ec2-54-92-230-7.compute-1.amazonaws.com:5432/ddomap090353o7')
     }
-}
 
 ALLOWED_HOSTS = ['my-courses-app-m.herokuapp.com']
 

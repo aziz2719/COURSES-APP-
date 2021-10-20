@@ -1,8 +1,7 @@
 from pathlib import Path
 import os
 from decouple import config
-#import django_heroku
-#import dj_database_url
+import dj_database_url
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 
@@ -16,6 +15,7 @@ DATABASES = {
         'PASSWORD': config('DB_PASSWORD'),
         'HOST': config('DB_HOST'),
         'PORT': '',
+        'default': dj_database_url.config(),
     }
 }
 

@@ -13,7 +13,7 @@ DATABASES = {
         'NAME': config('DB_NAME'),
         'USER': config('DB_USER'),
         'PASSWORD': config('DB_PASSWORD'),
-        'HOST': config('DB_HOST'),
+        #'HOST': config('DB_HOST'),
         'PORT': '',
         'default': dj_database_url.config('postgres://ssrvhbgigjugbd:48cc70fe85ccb3d9ce79b426d5de3ab3c6e543a037f009cea53e1462b3e926dd@ec2-54-92-230-7.compute-1.amazonaws.com:5432/ddomap090353o7')
     }

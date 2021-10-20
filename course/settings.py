@@ -9,17 +9,18 @@ SECRET_KEY = config('SECRET_KEY')
 DEBUG = config('DEBUG', cast=bool)
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'ENGINE': 'django.db.backends.postgresql',
         'NAME': config('DB_NAME'),
         'USER': config('DB_USER'),
         'PASSWORD': config('DB_PASSWORD'),
         'HOST': config('DB_HOST'),
-        'PORT': '',
+        'PORT': '5432',
     }
 }
 
 
-ALLOWED_HOSTS = ['0.0.0.0']
+
+ALLOWED_HOSTS = ['my-courses-app-m.herokuapp.com', '127.0.0.1', '*']
 
 
 INSTALLED_APPS = [

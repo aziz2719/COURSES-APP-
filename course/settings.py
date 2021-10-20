@@ -13,11 +13,12 @@ DATABASES = {
         'NAME': config('DB_NAME'),
         'USER': config('DB_USER'),
         'PASSWORD': config('DB_PASSWORD'),
-        'HOST': dj_database_url.config('DB_HOST'),
+        'HOST': dj_database_url.config(),
         'PORT': '',
         #'default': dj_database_url.config(),
     }
 }
+
 
 
 ALLOWED_HOSTS = ['my-courses-app-m.herokuapp.com']

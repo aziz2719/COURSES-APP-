@@ -13,7 +13,7 @@ DATABASES = {
         'NAME': config('DB_NAME'),
         'USER': config('DB_USER'),
         'PASSWORD': config('DB_PASSWORD'),
-        'HOST': dj_database_url.config(),
+        'HOST': dj_database_url.config('DB_HOST'),
         'PORT': '',
         #'default': dj_database_url.config(),
     }
